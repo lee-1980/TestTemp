@@ -1,0 +1,392 @@
+.presale-view{
+    width: 89%;
+    max-width: 833px;
+    margin: auto;
+  
+    .presale-card{
+      position: relative;
+      margin-bottom: 20px;
+      z-index: 2;
+      min-height: 530px;
+
+      .avatars {
+        margin-top: 30px;
+        display: flex;
+        overflow: auto;
+        .nft-item {
+          float: left;
+          width: 100px;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+
+      img {
+        display: flex;
+        margin: auto;
+        cursor: pointer;
+      }
+
+      img:hover {
+        opacity: 0.5;
+      }
+
+      .mint-button {
+        width: 250px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px rgb(44 39 109 / 10%);
+        border-radius: 5px;
+        padding: 9px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+
+        p {
+          margin: auto;
+          font-family: Montserrat SemiBold;
+          font-weight: 600;
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+
+      .random-button {
+        width: 90px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px rgb(44 39 109 / 10%);
+        border-radius: 5px;
+        padding: 9px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        p {
+          margin: auto;
+          font-family: Montserrat SemiBold;
+          font-weight: 600;
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+      
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        background: rgb(19 38 56);
+        backdrop-filter: blur(40px);
+      }
+    
+      /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+      @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background: #0d0f1d;
+      }
+  
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      padding: 20px;
+      width: 100%;
+  
+      .presale-card-grid{
+        margin: 0;
+        width: 100%;
+      }
+  
+      .presale-card-header{
+        .presale-card-header-title{
+          font-family: Montserrat Bold;
+          font-weight: bold;
+          font-size: 24px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-bottom: 4px;
+        }
+
+        .presale-card-header-sub-title{
+          font-family: Montserrat;
+          font-size: 18px;
+          color: #FFFFFF;
+          margin-bottom: 4px;
+        }
+      }
+  
+      .presale-card-metrics {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 10px;
+        
+        .presale-card-apy,
+        .presale-card-tvl,
+        .presale-card-index {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+  
+          .presale-card-metrics-title{
+            font-family: Montserrat Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 8px;
+            margin-bottom: 2px;
+          }
+          
+          .presale-card-metrics-value{
+            font-family: Montserrat Bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #49bccf;
+          }
+        }
+      }
+  
+      .presale-card-area {
+        .presale-card-description{
+          margin-top: 10px;
+          .presale-card-description-text{
+            font-family: Montserrat Light;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 5px;
+          }
+        }
+        .presale-card-wallet-notification{
+          text-align: center;
+  
+          .presale-card-wallet-connect-btn{
+            background: #53142c;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 0px 10px rgba(44, 39, 109, 0.1);
+            border-radius: 5px;
+            padding: 14px 58px;
+            cursor: pointer;
+            margin: auto;
+            max-width: 280px;
+            margin-top: 20px;
+          
+            p{
+              font-family: Montserrat SemiBold;
+              font-weight: 600;
+              font-size: 18px;
+              color: #FFFFFF;
+            }
+          }
+  
+          .presale-card-wallet-desc-text{
+            font-family: Montserrat Light;
+            font-weight: 300;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 10px;
+            margin-bottom: 6px;
+          }
+        }
+  
+        .presale-card-action-area{
+          width: 100%;
+          margin-top: 25px;
+          text-align: center;
+  
+          .presale-card-action-stage-btns-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+            .presale-card-action-stage-btn{
+              margin: 0px 30px;
+              padding: 6px;
+              cursor: pointer;
+              transition: all .4s ease;
+              
+              p{
+                font-family: Montserrat SemiBold;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.6);
+              }
+            }
+  
+            .presale-card-action-stage-btn.active{
+  
+              p{
+                color: #FFFFFF;
+              }
+  
+              border-bottom: 1px solid #FFFFFF;;
+            }
+          }
+  
+          .presale-card-action-row{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+  
+            .presale-card-action-input{
+              width: 100%;
+  
+              background: rgba(255, 255, 255, 0.2);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              border-radius: 5px;
+              outline: none;
+              
+              .MuiOutlinedInput-input{
+                font-family: Montserrat Medium;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.6);
+                padding: 14px 20px;
+              }
+              
+              .MuiOutlinedInput-notchedOutline{
+                border-color: rgba(255, 255, 255, 0.2) !important;
+              }
+              
+              .presale-card-action-input-btn{
+                cursor: pointer;
+                  
+                p{
+                  font-family: Montserrat SemiBold;
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: #FFFFFF;
+                }
+              }
+            } 
+            
+            .presale-card-tab-panel{
+              min-width: 215px;
+              margin-left: 10px;
+  
+              .presale-card-tab-panel-btn{
+                background: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0px 0px 10px rgba(44, 39, 109, 0.1);
+                border-radius: 5px;
+                padding: 14px 0px;
+                cursor: pointer;
+                text-align: center;
+            
+                p{
+                  font-family: Montserrat SemiBold;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+  
+          .presale-card-action-help-text{
+            margin-top: 10px;
+            
+            p{
+              font-family: Montserrat Light;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 17px;
+              text-align: center;
+              color: rgba(255, 255, 255, 0.6);
+            }
+
+            b{
+              color:#49bccf;
+            }
+          }
+        }
+  
+        .presale-user-data{
+          justify-content: center;
+          margin: auto;
+          padding: 0 5px;
+          margin-top: 30px;       
+          
+        }
+      }
+    }
+  }
+  
+  .data-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0px;
+  
+    .data-row-name{
+      font-family: Montserrat Medium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    .data-row-value{
+      font-family: Montserrat;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .presale-view{
+      .presale-card{
+        margin-bottom: 10px;
+        .random-button {
+          margin: auto;
+          margin-top: 20px;
+        }
+        .presale-card-metrics{
+          .presale-card-apy,
+          .presale-card-tvl,
+          .presale-card-index {
+            align-items: flex-start;
+          }
+  
+          .presale-card {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+  
+        .presale-card-area{
+          .presale-card-action-area{
+            .presale-card-action-row{
+              flex-direction: column;
+              .presale-card-tab-panel{
+                margin-left: 0;
+                margin-top: 20px;
+                min-width: none;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .presale-view{
+      width: 100%;
+    }
+  }
